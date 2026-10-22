@@ -151,7 +151,7 @@ public class MainActivity extends Activity {
         dock.setClipChildren(false); dock.setClipToPadding(false);
         dock.setGravity(Gravity.CENTER_VERTICAL);
         for (String p : DOCK) {
-            View c = card(p, 190, 107);
+            View c = card(p, 175, 98);
             if (c == null) continue;
             ((LinearLayout.LayoutParams) c.getLayoutParams()).setMargins(dp(12), 0, dp(12), 0);
             dock.addView(c);
@@ -163,14 +163,14 @@ public class MainActivity extends Activity {
         col.addView(t2);
 
         GridLayout grid = new GridLayout(this);
-        grid.setColumnCount(5);
+        grid.setColumnCount(6);
         grid.setClipChildren(false); grid.setClipToPadding(false);
         for (String p : GRID) {
-            View c = card(p, 150, 84);
+            View c = card(p, 125, 70);
             if (c == null) continue;
             GridLayout.LayoutParams lp = new GridLayout.LayoutParams();
-            lp.width = dp(150); lp.height = dp(84);
-            lp.setMargins(dp(10), dp(10), dp(10), dp(10));
+            lp.width = dp(125); lp.height = dp(70);
+            lp.setMargins(dp(8), dp(8), dp(8), dp(8));
             c.setLayoutParams(lp);
             grid.addView(c);
         }
