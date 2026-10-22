@@ -21,10 +21,8 @@ import android.widget.TextClock;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-    static final String[] DOCK = {"com.netflix.ninja", "com.google.android.youtube.tv",
-            "com.disney.disneyplus", "com.spotify.tv.android"};
-    static final String[] GRID = {"com.crunchyroll.crunchyroid", "com.amazon.amazonvideo.livingroom",
-            "com.xuper.amigonly.tv.new", "com.nuvio.tv", "com.zenith.tv", "com.yablio.sendfilestotv"};
+    static final String[] DOCK = {"com.netflix.ninja", "com.zenith.tv", "com.google.android.youtube.tv", "com.crunchyroll.crunchyroid"};
+    static final String[] GRID = {"com.disney.disneyplus", "com.spotify.tv.android", "com.amazon.amazonvideo.livingroom", "com.xuper.amigonly.tv.new", "com.nuvio.tv", "com.yablio.sendfilestotv"};
     float d;
 
     int dp(int v) { return (int) (v * d + 0.5f); }
